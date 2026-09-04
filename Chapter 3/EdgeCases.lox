@@ -1,0 +1,18 @@
+print "Basic arithmetic:";
+print 2 + 3 * 4;
+
+print "Equality between different types:";
+print 0 == false;
+print nil == nil;
+
+print "Truthiness of zero and empty strings:";
+if (0) print "zero is truthy";
+if ("") print "an empty string is truthy";
+
+print "Short-circuit evaluation:";
+var changed = false;
+false and (changed = true);
+print changed;
+
+true or (changed = true);
+print changed;
